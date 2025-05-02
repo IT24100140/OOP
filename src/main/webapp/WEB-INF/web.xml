@@ -35,6 +35,7 @@
     <url-pattern>/UserSignupServlet</url-pattern>
   </servlet-mapping>
 
+  <!-- Test File Servlet -->
   <servlet>
     <servlet-name>TestFileServlet</servlet-name>
     <servlet-class>servlets.TestFileServlet</servlet-class>
@@ -44,6 +45,14 @@
     <url-pattern>/TestFileServlet</url-pattern>
   </servlet-mapping>
 
-
+  <!-- Contact Servlet -->
+  <servlet>
+    <servlet-name>ContactServlet</servlet-name>
+    <servlet-class>servlets.ContactServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactServlet</servlet-name>
+    <url-pattern>/ContactServlet</url-pattern>
+  </servlet-mapping>
 
 </web-app>
