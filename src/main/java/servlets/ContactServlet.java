@@ -32,6 +32,7 @@ public class ContactServlet extends HttpServlet {
         }
 
         // Redirect back to contact page or show a thank-you
-        response.sendRedirect("contact.html"); // You can also forward to a success.jsp page
+        response.sendRedirect("thankyou.html");
+        // You can also forward to a success.jsp page
     }
 }
