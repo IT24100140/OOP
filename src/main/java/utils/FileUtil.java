@@ -6,34 +6,34 @@ import java.util.List;
 
 public class FileUtil {
 
-    // Ensure file and parent directory exist
+    // Ensure the file and its parent directory exist
     private static void ensureFileExists(String filePath) throws IOException {
         File file = new File(filePath);
         File parentDir = file.getParentFile();
 
         if (parentDir != null && !parentDir.exists()) {
             if (!parentDir.mkdirs()) {
-                throw new IOException("Failed to create parent directory: " + parentDir.getAbsolutePath());
+                throw new IOException("❌ Failed to create parent directory: " + parentDir.getAbsolutePath());
             }
         }
 
         if (!file.exists()) {
             if (!file.createNewFile()) {
-                throw new IOException("Failed to create file: " + file.getAbsolutePath());
+                throw new IOException("❌ Failed to create file: " + file.getAbsolutePath());
             }
         }
     }
 
-    // Append a line with proper line break
+    // ✅ Append a new line to the file
     public static void appendToFile(String filePath, String line) throws IOException {
         ensureFileExists(filePath);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
             writer.write(line.trim());
-            writer.newLine(); // Ensures next entry starts on a new line
+            writer.newLine(); // New line after each entry
         }
     }
 
-    // Read all lines (skips empty lines)
+    // ✅ Read all non-empty lines
     public static List<String> readAllLines(String filePath) throws IOException {
         ensureFileExists(filePath);
         List<String> lines = new ArrayList<>();
@@ -49,7 +49,7 @@ public class FileUtil {
         return lines;
     }
 
-    // Check if email exists
+    // ✅ Check if email already exists
     public static boolean emailExists(String filePath, String email) throws IOException {
         List<String> lines = readAllLines(filePath);
         for (String line : lines) {
@@ -61,7 +61,7 @@ public class FileUtil {
         return false;
     }
 
-    // Delete line by email
+    // ✅ Delete a line from the file by email
     public static void deleteLineByEmail(String filePath, String email) throws IOException {
         ensureFileExists(filePath);
         File file = new File(filePath);
@@ -82,7 +82,7 @@ public class FileUtil {
         }
 
         if (!file.delete() || !tempFile.renameTo(file)) {
-            throw new IOException("Failed to update file after deletion.");
+            throw new IOException("❌ Failed to update file after deletion.");
         }
     }
 }

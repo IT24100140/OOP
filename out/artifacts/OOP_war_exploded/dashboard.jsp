@@ -1,80 +1,53 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ page import="javax.servlet.http.*, javax.servlet.*" %>
 <%
-  // Get the logged-in username from session
   String username = (String) session.getAttribute("username");
   if (username == null) {
     response.sendRedirect("login.jsp");
     return;
   }
 %>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book a Room - Hotel Reservation</title>
+  <title>User Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f8f9fa;
+      background-color: #f5f5f5;
     }
-    .booking-form {
-      background: white;
+    .dashboard-container {
+      max-width: 700px;
+      margin: 60px auto;
+    }
+    .dashboard-card {
       padding: 30px;
-      border-radius: 10px;
-      margin-top: 50px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .btn-lg {
+      padding: 15px 30px;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <div class="col-md-8 offset-md-2 booking-form">
-    <h3 class="mb-4 text-center">Book a Room</h3>
-    <form action="ReservationServlet" method="post">
-      <div class="mb-3">
-        <label for="roomType" class="form-label">Room Type</label>
-        <select class="form-select" id="roomType" name="roomType" required>
-          <option value="Standard">Standard</option>
-          <option value="Deluxe">Deluxe</option>
-          <option value="Suite">Suite</option>
-        </select>
-      </div>
+<div class="dashboard-container">
+  <div class="dashboard-card text-center">
+    <h2 class="mb-4">Welcome, <%= username %>&nbsp;🎉</h2>
 
-      <div class="mb-3">
-        <label for="checkIn" class="form-label">Check-In Date</label>
-        <input type="date" class="form-control" id="checkIn" name="checkIn" required>
-      </div>
-
-      <div class="mb-3">
-        <label for="checkOut" class="form-label">Check-Out Date</label>
-        <input type="date" class="form-control" id="checkOut" name="checkOut" required>
-      </div>
-
-      <div class="mb-3 form-check">
-        <input class="form-check-input" type="checkbox" id="meal" name="meal" value="Yes">
-        <label class="form-check-label" for="meal">Include Meal</label>
-      </div>
-
-      <div class="mb-3 form-check">
-        <input class="form-check-input" type="checkbox" id="wifi" name="wifi" value="Yes">
-        <label class="form-check-label" for="wifi">Include WiFi</label>
-      </div>
-
-      <div class="mb-3 form-check">
-        <input class="form-check-input" type="checkbox" id="transport" name="transport" value="Yes">
-        <label class="form-check-label" for="transport">Include Transport</label>
-      </div>
-
-      <button type="submit" class="btn btn-primary w-100">Order Now</button>
-    </form>
+    <div class="d-grid gap-3">
+      <a href="reservtionForm.jsp" class="btn btn-primary btn-lg">📅&nbsp;Book a Room</a>
+      <a href="myBookings.jsp" class="btn btn-success btn-lg">📖&nbsp;View My Bookings</a>
+      <a href="deleteProfile.jsp" class="btn btn-danger btn-lg">🗑️&nbsp;Delete My Profile</a>
+      <a href="logout.jsp" class="btn btn-secondary btn-lg">🚪&nbsp;Logout</a>
+    </div>
   </div>
 </div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

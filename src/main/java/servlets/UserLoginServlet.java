@@ -9,9 +9,8 @@ import java.util.List;
 
 public class UserLoginServlet extends HttpServlet {
 
-    private static final String USER_FILE = System.getProperty("user.dir") + "/src/main/webapp/data/users.txt";
-
-
+    // ✅ Writable path outside WAR file for persistent access
+    private static final String USER_FILE = System.getProperty("user.home") + "/hotelapp/users.txt";
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -25,8 +24,7 @@ public class UserLoginServlet extends HttpServlet {
             return;
         }
 
-        String filePath = getServletContext().getRealPath(USER_FILE);
-        List<String> users = FileUtil.readAllLines(filePath);
+        List<String> users = FileUtil.readAllLines(USER_FILE);
 
         boolean valid = false;
         String username = "";
@@ -56,7 +54,6 @@ public class UserLoginServlet extends HttpServlet {
             session.setAttribute("username", username);
             session.setAttribute("email", email);
 
-            System.out.println("Redirecting to dashboard.jsp...");
             response.sendRedirect("dashboard.jsp");
         } else {
             System.out.println("❌ LOGIN FAILED for email: " + email);

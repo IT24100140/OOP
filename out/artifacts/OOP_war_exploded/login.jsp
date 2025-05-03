@@ -1,4 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="javax.servlet.http.*" %>
+<%
+    // Auto redirect if already logged in
+    if (session.getAttribute("username") != null) {
+        response.sendRedirect("dashboard.jsp");
+        return;
+    }
+
+    String error = (String) request.getAttribute("error");
+    String loginType = (String) request.getAttribute("loginType"); // Optional if you want separate admin/user error targeting
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,12 +38,9 @@
     </div>
 
     <!-- User Login Form -->
-    <!-- User Login Form -->
     <div id="userForm" class="form-container card p-4 shadow-sm">
         <h4 class="mb-3 text-center">User Login</h4>
-
-        <% String error = (String) request.getAttribute("error"); %>
-        <% if (error != null) { %>
+        <% if (error != null && (loginType == null || loginType.equals("user"))) { %>
         <div class="alert alert-danger"><%= error %></div>
         <% } %>
 
@@ -55,6 +63,9 @@
     <!-- Admin Login Form -->
     <div id="adminForm" class="form-container card p-4 shadow-sm">
         <h4 class="mb-3 text-center">Admin Login</h4>
+        <% if (error != null && "admin".equals(loginType)) { %>
+        <div class="alert alert-danger"><%= error %></div>
+        <% } %>
         <form action="AdminLoginServlet" method="post">
             <div class="mb-3">
                 <label for="adminEmail" class="form-label">Email</label>
@@ -70,6 +81,13 @@
 </div>
 
 <script>
+    // Auto-show form on page load if error was set
+    window.onload = function () {
+        <% if (error != null) { %>
+        showForm('<%= loginType != null ? loginType : "user" %>');
+        <% } %>
+    };
+
     function showForm(type) {
         document.getElementById('userForm').style.display = (type === 'user') ? 'block' : 'none';
         document.getElementById('adminForm').style.display = (type === 'admin') ? 'block' : 'none';
