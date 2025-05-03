@@ -1,14 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page import="javax.servlet.http.*, javax.servlet.*" %>
-<%
-  // Get the logged-in username from session
-  String username = (String) session.getAttribute("username");
-  if (username == null) {
-    response.sendRedirect("login.jsp");
-    return;
-  }
-%>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,7 +63,6 @@
   </div>
 </div>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

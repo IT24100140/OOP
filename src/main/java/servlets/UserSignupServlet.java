@@ -8,7 +8,8 @@ import java.io.*;
 
 public class UserSignupServlet extends HttpServlet {
 
-    private static final String USER_FILE = "/data/users.txt";
+    private static final String USER_FILE = System.getProperty("user.dir") + "/src/main/webapp/data/users.txt";
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

@@ -55,4 +55,14 @@
     <url-pattern>/ContactServlet</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>ReservationServlet</servlet-name>
+    <servlet-class>servlets.ReservationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReservationServlet</servlet-name>
+    <url-pattern>/ReservationServlet</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>
