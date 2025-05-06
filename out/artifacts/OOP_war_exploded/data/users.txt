@@ -1,5 +1,0 @@
-John Doe,john@example.com,password123
-Jane Smith,jane@example.com,pass456
-Dineth,dineth@gmail.com,HelloWorld
-Test User,test@user.com,test123
-Amaa Nethmi,Ama@home.com,12345678
