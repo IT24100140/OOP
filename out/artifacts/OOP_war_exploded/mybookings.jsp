@@ -24,10 +24,10 @@
   }
 %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Bookings</title>
+  <title>My Bookings - Lanka Uyana Hotels</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -50,7 +50,7 @@
         <th>Transport</th>
         <th>Check-In</th>
         <th>Check-Out</th>
-        <th>Time</th>
+        <th>Booked At</th>
       </tr>
       </thead>
       <tbody>
@@ -73,7 +73,7 @@
     </table>
     <% } %>
 
-    <div class="text-center mt-3">
+    <div class="text-center mt-4">
       <a href="dashboard.jsp" class="btn btn-secondary">⬅ Back to Dashboard</a>
     </div>
   </div>
