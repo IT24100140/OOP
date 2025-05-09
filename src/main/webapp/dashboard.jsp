@@ -41,6 +41,7 @@
     <h2 class="mb-4">Welcome, <%= username %>&nbsp;🎉</h2>
 
     <div class="d-grid gap-3">
+      <a href="index.html" class="btn btn-outline-dark btn-lg">🏠&nbsp;Main Page</a>
       <a href="reservtionForm.jsp" class="btn btn-primary btn-lg">📅&nbsp;Book a Room</a>
       <a href="myBookings.jsp" class="btn btn-success btn-lg">📖&nbsp;View My Bookings</a>
       <a href="deleteProfile.jsp" class="btn btn-danger btn-lg">🗑️&nbsp;Delete My Profile</a>

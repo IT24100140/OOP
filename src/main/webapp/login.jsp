@@ -37,6 +37,11 @@
         <button class="btn btn-dark" onclick="showForm('admin')">Login as Admin</button>
     </div>
 
+    <!-- 🌐 Main Page Button -->
+    <div class="text-center mt-4">
+        <a href="index.html" class="btn btn-outline-secondary">🏠 Back to Main Page</a>
+    </div>
+
     <!-- User Login Form -->
     <div id="userForm" class="form-container card p-4 shadow-sm">
         <h4 class="mb-3 text-center">User Login</h4>
