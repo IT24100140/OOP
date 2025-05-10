@@ -187,22 +187,7 @@ v1.22.7 - Fixed dummy bug #227
 v1.22.8 - Fixed dummy bug #228
 v1.22.9 - Fixed dummy bug #229
 v1.23.0 - Fixed dummy bug #230
-v1.23.1 - Fixed dummy bug #231
-v1.23.2 - Fixed dummy bug #232
-v1.23.3 - Fixed dummy bug #233
-v1.23.4 - Fixed dummy bug #234
-v1.23.5 - Fixed dummy bug #235
-v1.23.6 - Fixed dummy bug #236
-v1.23.7 - Fixed dummy bug #237
-v1.23.8 - Fixed dummy bug #238
-v1.23.9 - Fixed dummy bug #239
-v1.24.0 - Fixed dummy bug #240
-v1.24.1 - Fixed dummy bug #241
-v1.24.2 - Fixed dummy bug #242
-v1.24.3 - Fixed dummy bug #243
-v1.24.4 - Fixed dummy bug #244
-v1.24.5 - Fixed dummy bug #245
-v1.24.6 - Fixed dummy bug #246
+
 v1.24.7 - Fixed dummy bug #247
 v1.24.8 - Fixed dummy bug #248
 v1.24.9 - Fixed dummy bug #249
@@ -229,23 +214,7 @@ v1.26.9 - Fixed dummy bug #269
 v1.27.0 - Fixed dummy bug #270
 v1.27.1 - Fixed dummy bug #271
 v1.27.2 - Fixed dummy bug #272
-v1.27.3 - Fixed dummy bug #273
-v1.27.4 - Fixed dummy bug #274
-v1.27.5 - Fixed dummy bug #275
-v1.27.6 - Fixed dummy bug #276
-v1.27.7 - Fixed dummy bug #277
-v1.27.8 - Fixed dummy bug #278
-v1.27.9 - Fixed dummy bug #279
-v1.28.0 - Fixed dummy bug #280
-v1.28.1 - Fixed dummy bug #281
-v1.28.2 - Fixed dummy bug #282
-v1.28.3 - Fixed dummy bug #283
-v1.28.4 - Fixed dummy bug #284
-v1.28.5 - Fixed dummy bug #285
-v1.28.6 - Fixed dummy bug #286
-v1.28.7 - Fixed dummy bug #287
-v1.28.8 - Fixed dummy bug #288
-v1.28.9 - Fixed dummy bug #289
+
 v1.29.0 - Fixed dummy bug #290
 v1.29.1 - Fixed dummy bug #291
 v1.29.2 - Fixed dummy bug #292
@@ -256,17 +225,7 @@ v1.29.6 - Fixed dummy bug #296
 v1.29.7 - Fixed dummy bug #297
 v1.29.8 - Fixed dummy bug #298
 v1.29.9 - Fixed dummy bug #299
-v1.30.0 - Fixed dummy bug #300
-v1.30.1 - Fixed dummy bug #301
-v1.30.2 - Fixed dummy bug #302
-v1.30.3 - Fixed dummy bug #303
-v1.30.4 - Fixed dummy bug #304
-v1.30.5 - Fixed dummy bug #305
-v1.30.6 - Fixed dummy bug #306
-v1.30.7 - Fixed dummy bug #307
-v1.30.8 - Fixed dummy bug #308
-v1.30.9 - Fixed dummy bug #309
-v1.31.0 - Fixed dummy bug #310
+
 v1.31.1 - Fixed dummy bug #311
 v1.31.2 - Fixed dummy bug #312
 v1.31.3 - Fixed dummy bug #313
