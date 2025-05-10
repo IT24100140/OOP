@@ -5,20 +5,7 @@ parameter_83=value_127
 parameter_84=value_895
 
 parameter_102=value_932
-parameter_103=value_628
-parameter_104=value_967
-parameter_105=value_359
-parameter_106=value_276
-parameter_107=value_174
-parameter_108=value_834
-parameter_109=value_613
-parameter_110=value_314
-parameter_111=value_920
-parameter_112=value_423
-parameter_113=value_844
-parameter_114=value_242
-parameter_115=value_981
-parameter_116=value_689
+
 parameter_117=value_618
 parameter_118=value_740
 parameter_119=value_793
