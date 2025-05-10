@@ -76,24 +76,11 @@
 [INFO] Dummy log line 76: Operation successful.
 [INFO] Dummy log line 77: Operation successful.
 [INFO] Dummy log line 78: Operation successful.
-[INFO] Dummy log line 79: Operation successful.
-[INFO] Dummy log line 80: Operation successful.
-[INFO] Dummy log line 81: Operation successful.
-[INFO] Dummy log line 82: Operation successful.
-[INFO] Dummy log line 83: Operation successful.
-[INFO] Dummy log line 84: Operation successful.
-[INFO] Dummy log line 85: Operation successful.
-[INFO] Dummy log line 86: Operation successful.
-[INFO] Dummy log line 87: Operation successful.
+explain  Operation successful.
 [INFO] Dummy log line 88: Operation successful.
 [INFO] Dummy log line 89: Operation successful.
 [INFO] Dummy log line 90: Operation successful.
-[INFO] Dummy log line 91: Operation successful.
-[INFO] Dummy log line 92: Operation successful.
-[INFO] Dummy log line 93: Operation successful.
-[INFO] Dummy log line 94: Operation successful.
-[INFO] Dummy log line 95: Operation successful.
-[INFO] Dummy log line 96: Operation successful.
+
 [INFO] Dummy log line 97: Operation successful.
 [INFO] Dummy log line 98: Operation successful.
 [INFO] Dummy log line 99: Operation successful.
