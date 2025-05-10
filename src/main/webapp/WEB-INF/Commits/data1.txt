@@ -467,14 +467,6 @@
 [INFO] Dummy log line 467: Operation successful.
 [INFO] Dummy log line 468: Operation successful.
 [INFO] Dummy log line 469: Operation successful.
-[INFO] Dummy log line 470: Operation successful.
-[INFO] Dummy log line 471: Operation successful.
-[INFO] Dummy log line 472: Operation successful.
-[INFO] Dummy log line 473: Operation successful.
-[INFO] Dummy log line 474: Operation successful.
-[INFO] Dummy log line 475: Operation successful.
-[INFO] Dummy log line 476: Operation successful.
-[INFO] Dummy log line 477: Operation successful.
 [INFO] Dummy log line 478: Operation successful.
 HUTTHGUDEFUGYDSVUGFEVFJHSDEF
 DSVSDGVSDFGISDVHCHSD
